@@ -24,8 +24,8 @@ defmodule VisualRater.ArtistController do
     end
   end
 
-  def show(conn, %{"id" => id}) do
-    artist = Repo.get!(Artist, id)
+  def show(conn, %{"name" => name}) do
+    artist = Repo.get_by(Artist, name: name)
     render(conn, "show.json", artist: artist)
   end
 
