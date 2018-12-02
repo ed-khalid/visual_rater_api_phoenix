@@ -26,6 +26,6 @@ config :visual_rater, VisualRater.Repo,
   adapter: Ecto.Adapters.Postgres,
   username: "postgres",
   password: "postgres",
-  database: "visual_rater_dev",
+  database: "visual_rater",
   hostname: "localhost",
   pool_size: 10
